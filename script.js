@@ -21,7 +21,7 @@ async function fetchBlog() {
         <img src="${imageUrl}" class="card-img-top" alt="${post.title.rendered}">
         <div class="card-body">
           <h5 class="card-title">${post.title.rendered}</h5>
-          <p class="card-text">${post.excerpt.rendered}</p>
+          <p class="card-text">${post.excerpt.rendered.slice(0, 100)}</p>
           <a href="#" class="btn btn-primary">Read More</a>
         </div>
       </div>
