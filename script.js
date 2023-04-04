@@ -22,7 +22,7 @@ async function fetchBlog() {
         <div class="card-body">
           <h5 class="card-title">${post.title.rendered}</h5>
           <p class="card-text">${post.excerpt.rendered.slice(0, 100)}</p>
-          <a href="#" class="btn btn-primary">Read More</a>
+          <a href="./details.html?id=${post.id}" class="btn btn-primary">Read More</a>
         </div>
       </div>
     </div>`;
