@@ -1,4 +1,4 @@
-const url = "http://localhost:8888/fedup/wp-json/wp/v2/posts";
+const url = "https://willyongaks.com/Fed_ups/wp-json/wp/v2/posts";
 const container = document.querySelector(".details-container");
 const URLParams = new URLSearchParams(window.location.search);
 const postId = URLParams.get("id");
