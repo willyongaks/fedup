@@ -10,7 +10,7 @@ async function fetchBlog() {
   for (let i = 0; i < blog.length; i++) {
     const post = blog[i];
 
-    const mediaUrl = `http://localhost:8888/fedup/wp-json/wp/v2/media/${post.featured_media}`;
+    const mediaUrl = `https://willyongaks.com/Fed_ups/wp-json/wp/v2/media/${post.featured_media}`;
     const mediaResponse = await fetch(mediaUrl);
     const media = await mediaResponse.json();
     const imageUrl = media.source_url;
